@@ -5,6 +5,7 @@ api_reference: true
 ---
 
 This API reference documents the exports from the `apollo-server` package.
+FIXME no it doesn't, it's a weird mishmosh of apollo-server and the integrations. We should refactor it somehow.
 
 ## `class ApolloServer`
 

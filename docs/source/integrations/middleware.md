@@ -4,6 +4,9 @@ sidebar_title: Node.js middleware
 description: Use Apollo Server with Express, Koa, and more
 ---
 
+FIXME the way we document the packages needs some work in general. first of all the idea that there are multiple packages at all isn't really introduced early in the docs. secondly, it's not always applyMiddleware, there's createHandler too. we should actually document all the middlewares!!! or give up and explicitly only care about the READMEs. Not an AS3 regression though. Also we shouldn't refer to `apollo-server` as the "core" package since it's not `apollo-server-core`. I like "batteries-included".
+Another alternative is that we should endeavour to document Express explicitly and basically say "for the others, figure it out yourself" (or README only)
+
 Apollo Server integrates easily with several popular Node.js middleware libraries.
 To integrate, first install the appropriate package from the table below _instead of_
 the core `apollo-server` package:
