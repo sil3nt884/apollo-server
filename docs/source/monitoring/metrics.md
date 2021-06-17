@@ -24,6 +24,10 @@ You can set environment variable values on the command line as seen below, or wi
 APOLLO_KEY=YOUR_API_KEY APOLLO_GRAPH_ID=mygraph APOLLO_GRAPH_VARIANT=development node start-server.js
 ```
 
+#### Communicating with Studio
+
+By default, Apollo Server aggregates your traces and sends them in batches to Studio every minute. This behavior is highly configurable, and you can change the parameters in the [Usage Reporting plugin's configuration](https://www.apollographql.com/docs/apollo-server/api/plugin/usage-reporting/#custom-installation). 
+
 ### Identifying distinct clients
 
 Apollo Studio's [client awareness feature](https://www.apollographql.com/docs/studio/client-awareness/) enables you to view metrics for distinct versions
