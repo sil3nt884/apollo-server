@@ -5,10 +5,10 @@ export function convertNodeHttpToRequest(req: IncomingMessage): Request {
   const headers = new Headers();
   Object.keys(req.headers).forEach(key => {
     const values = req.headers[key]!;
-    if (Array.isArray(values)) {
+    if (Array.isArray(values) && !key.startsWith(':')) {
       values.forEach(value => headers.append(key, value));
-    } else {
-      headers.append(key, values);
+    } else if(!key.startsWith(':')) {
+      headers.append(key, values as any);
     }
   });
 
